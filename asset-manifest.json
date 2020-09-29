@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ordersManger/static/css/main.5f361e03.chunk.css",
+    "main.js": "/ordersManger/static/js/main.8b47fd30.chunk.js",
+    "main.js.map": "/ordersManger/static/js/main.8b47fd30.chunk.js.map",
+    "runtime-main.js": "/ordersManger/static/js/runtime-main.195f654d.js",
+    "runtime-main.js.map": "/ordersManger/static/js/runtime-main.195f654d.js.map",
+    "static/js/2.bf7a534c.chunk.js": "/ordersManger/static/js/2.bf7a534c.chunk.js",
+    "static/js/2.bf7a534c.chunk.js.map": "/ordersManger/static/js/2.bf7a534c.chunk.js.map",
+    "index.html": "/ordersManger/index.html",
+    "precache-manifest.1046aa15293e720616a1c875f675e8c8.js": "/ordersManger/precache-manifest.1046aa15293e720616a1c875f675e8c8.js",
+    "service-worker.js": "/ordersManger/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/ordersManger/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.bf7a534c.chunk.js.LICENSE.txt": "/ordersManger/static/js/2.bf7a534c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ordersManger/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.195f654d.js",
+    "static/js/2.bf7a534c.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.8b47fd30.chunk.js"
+  ]
+}
