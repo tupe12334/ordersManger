@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ordersManger/static/css/main.5f361e03.chunk.css",
-    "main.js": "/ordersManger/static/js/main.e53c3aa1.chunk.js",
-    "main.js.map": "/ordersManger/static/js/main.e53c3aa1.chunk.js.map",
+    "main.js": "/ordersManger/static/js/main.bf794dc2.chunk.js",
+    "main.js.map": "/ordersManger/static/js/main.bf794dc2.chunk.js.map",
     "runtime-main.js": "/ordersManger/static/js/runtime-main.195f654d.js",
     "runtime-main.js.map": "/ordersManger/static/js/runtime-main.195f654d.js.map",
     "static/js/2.bf7a534c.chunk.js": "/ordersManger/static/js/2.bf7a534c.chunk.js",
     "static/js/2.bf7a534c.chunk.js.map": "/ordersManger/static/js/2.bf7a534c.chunk.js.map",
     "index.html": "/ordersManger/index.html",
-    "precache-manifest.1a6eb88d3caa97f002f34e4a29330b87.js": "/ordersManger/precache-manifest.1a6eb88d3caa97f002f34e4a29330b87.js",
+    "precache-manifest.a8b73db441bbaa5c9c80d4b70b8029f4.js": "/ordersManger/precache-manifest.a8b73db441bbaa5c9c80d4b70b8029f4.js",
     "service-worker.js": "/ordersManger/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/ordersManger/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.bf7a534c.chunk.js.LICENSE.txt": "/ordersManger/static/js/2.bf7a534c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.195f654d.js",
     "static/js/2.bf7a534c.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.e53c3aa1.chunk.js"
+    "static/js/main.bf794dc2.chunk.js"
   ]
 }
