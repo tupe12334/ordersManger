@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Paper, Typography, Card, CardContent, CardHeader } from '@material-ui/core/';
-import Geocode from '../services/googleMaps';
+// import Geocode from '../services/googleMaps';
 import L from 'leaflet';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import getGeoCoding from '../services/opencage';
+
+
 
 export default function OrdeView(props) {
-
-    function getCordinent(Address) {
-        console.log(Address);
-        Geocode.fromAddress(Address).then((response) => {
-            console.log(response);
-        })
-    }
-    const position = [51.505, -0.09]
+    const [position, setposition] = useState()
     const [zoom, setZoom] = useState(13)
+    setposition(getGeoCoding(props.address))
+    useEffect(() => {
+        //
+    }, [position])
     return (
         <Card style={{ margin: "10px" }}>
             <CardHeader
@@ -32,7 +32,7 @@ export default function OrdeView(props) {
                     <Marker position={position}>
                         <Popup>
                             A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
+                         </Popup>
                     </Marker>
                 </Map>
             </CardContent>
