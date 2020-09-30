@@ -1,36 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useEffect, useState } from 'react';
 import OrdeView from './OrdeView';
 import { db } from '../services/firebase';
 
+var ordersRef = db.ref('orders')
 
 
 export default function OrderShow() {
-    var ordersRef = db.ref('orders')
     const [orders, Setorders] = useState([""])
+    const [ordersViewToShow, setordersViewToShow] = useState(null)
     useEffect(() => {
         getOrdersFromDB()
-    })
-
+    }, []);
     function getOrdersFromDB() {
         ordersRef.on('value', snap => {
-            console.log("snap " + snap);
             var temp = snap.val()
-            Setorders( Object.keys(temp))
-            console.log(orders);
+            var temp2 = Object.entries(temp)
+            //console.log(temp2);
+            setordersViewToShow(temp2.map((order) => {
+                var thisOrder = order[1]
+                //console.log(order[1]);
+                var dateformat = order[1].DDdate + "/" + order[1].MMdate + "/" + thisOrder.YYdate
+                var address = thisOrder.street + " " + thisOrder.house + " " + thisOrder.city
+                console.log(address);
+                console.log(dateformat);
+                return (
+                    <OrdeView key={counter++} rcivername={order[1].reciverName} date={dateformat} address={address} />
+                )
+            })
+            )
         })
     }
+
     var counter = 0
-    console.log(orders);
-    var ordersViewToShow = orders.map((order) => {
-        console.log(order);
-        console.log("ordersViewToShow" + ordersViewToShow);
-        return (
-            <OrdeView key={counter++} rcivername={order} />
-        )
-    })
     return (
         <div>
             {ordersViewToShow}
         </div>
     )
+
+
+
 }
